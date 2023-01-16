@@ -1,0 +1,38 @@
+#
+# Macro file for "BH5D.cc"
+# (can be run in batch, without graphic)
+#
+/control/verbose 2
+/run/verbose 2
+#
+/testem/det/setMat Carbon
+/testem/det/setSize 1 cm
+#
+/testem/phys/addPhysics FTFP_BERT_EMZ
+#/testem/phys/addPhysics emstandard_opt4
+#/testem/phys/addPhysics emstandardSS
+#/testem/phys/addPhysics muNucl
+#
+/run/setCut 1 mm
+#
+/run/initialize
+#
+#/process/inactivate muIoni
+#/process/inactivate muBrems
+#
+/gun/particle mu+
+/gun/energy 160 GeV
+#
+/testem/histo/setFileName allproc
+/testem/histo/setHisto 1 100 -10. 0.
+/testem/histo/setHisto 2 100 -10. 0.
+/testem/histo/setHisto 3 100 -10. 0.
+/testem/histo/setHisto 4 100 -10. 0.
+/testem/histo/setHisto 11 100 -10. 0.
+/testem/histo/setHisto 12 100 -10. 0.
+/testem/histo/setHisto 13 100 -10. 0.
+/testem/histo/setHisto 14 100 -10. 0.
+#
+/run/printProgress 10000
+#
+/run/beamOn 1000000

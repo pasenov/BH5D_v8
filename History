@@ -1,0 +1,15 @@
+29/04/2022 Version 1: The starting point is BH5D. epsilon added as weighting factor in histograms. Scaling factor for all histograms: cross_section/Nb_of_events.
+
+03/05/2022 Version 2: Define new materials.
+
+06/05/2022 Version 3: Change physics in order to introduce nuclear interactions.
+
+20/06/2022 Version 4: Apply correct scaling on y-axis of histograms.
+
+04/10/2022 Version 5: Add angle, energy information at production vertex only for the pair production process.
+
+31/10/2022 Version 6: A test version. Build G4EmStandard_option4 where only PP will be defined. Later, it's advisable to continue working on Version 5 and ignore the current version.
+
+06/12/2022 Version 7: A test version based on v5. Force collision biasing only in the target volume.
+
+21/12/2022 Version 8: A test version based on v7. Replace BOptrMultiParticleForceCollision with G4BOptrForceCollision.
